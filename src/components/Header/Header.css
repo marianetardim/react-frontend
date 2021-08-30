@@ -22,6 +22,7 @@
   top: -5px;
   width: 14px;
 }
+
 .contentMobile--minicart,
 .content--minicart{
   cursor: pointer;
@@ -63,7 +64,6 @@
 .contentMobile--minicart {
   position: relative;
 }
-
 
 .contentMobile--search,
 .content--search {

@@ -1,0 +1,142 @@
+.newsletter__container {
+  background: #f2f2f2;
+  padding: 24px 16px 16px;
+}
+
+.newsletter__container input{
+  outline: none;
+}
+
+.newsletter__titleContainer {
+  margin-bottom: 19px;
+}
+
+.newsletter__titleContainer h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  text-align: left;
+}
+
+.newsletter__content2 input {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  color: #585858;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  height: 48px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.newsletter__content2 input#email {
+  margin-top: 22px;
+}
+
+.newsletter__content2{
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.Newsletter_errorLabel {
+  color: #d7182a;
+  font-size: 12px;
+  width: 100%;
+  text-align: start;
+}
+.newsletterInputError {
+  border: 1px solid #d7182a !important;
+}
+
+.newsletter__content2 button {
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  height: 48px;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.newsletter__firstTitle {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.newsletter_secondTitle {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+}
+
+.newsletter__button {
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  margin-top: 15px;
+  max-width: 328px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .newsletter__container form,
+  .newsletter__container .newsletter__content {
+    margin: 0 auto;
+    max-width: 1248px;
+  }
+
+  .newsletter__titleContainer {
+    margin-bottom: 16px;
+  }
+
+  .newsletter__titleContainer h4 {
+    text-align: center;
+  }
+
+  .newsletter__content2 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter__content2 div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+  }
+
+  .newsletter__content2 input {
+    width: 280px;
+  }
+
+  .newsletter__content2 button {
+    margin: 0 0 0 8px;
+    max-width: 140px;
+  }
+
+  .newsletter__content2 input#email {
+    margin: 0 0 0 8px;
+  }
+
+  .Newsletter_errorLabel {
+    position: absolute;
+    bottom: -18px;
+  }
+
+  .newsletter__content2 div:nth-child(2) .Newsletter_errorLabel {
+    margin-left: 11px;
+  }
+}

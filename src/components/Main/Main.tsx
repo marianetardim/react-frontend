@@ -1,5 +1,6 @@
 import CarouselComponent from "../Main/Carousel/Carrousel";
 import ShelfComponent from "../Main/Shelf/Shelf";
+import NewsletterComponent from "../Main/Newsletter/Newsletter";
 import MinicartProvider from "../../context/minicartContext"
 
 
@@ -10,6 +11,7 @@ function Main() {
         <MinicartProvider>
             <ShelfComponent></ShelfComponent>
         </MinicartProvider>
+        <NewsletterComponent></NewsletterComponent>
     </div>
     );
 }
