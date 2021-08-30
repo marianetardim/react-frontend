@@ -32,7 +32,8 @@ You may also see any errors on console
 - Cart update when adding products
 - Summary of items in minicart
 - Components that integrate the structure such as header and footer
-- Banner carousel component 
+- Banner carousel component
+- Menu mobile including login icon
   
 
 #### Contact
@@ -40,3 +41,4 @@ You may also see any errors on console
 If you have any questions, I can help you:
 
 <a href="mailto:marianetardim@gmail.com"> marianetardim@gmail.com </a>
+<a href="https://www.linkedin.com/in/mariane-tardim-3085271a3/">Linkedin</a>
