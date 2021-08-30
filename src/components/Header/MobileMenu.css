@@ -1,0 +1,53 @@
+.MobalMenu__container {
+  background: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.MobalMenu__titleContent{
+  text-align: right;
+  padding: 20px;
+}
+
+.MobalMenu__closeButton{
+  cursor: pointer;
+}
+
+.MobalMenu__container .content--account{
+  padding-left: 15px;
+}
+
+.MobalMenu__container .content--account a{
+  text-decoration: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #7A7A7A;
+}
+
+.MobalMenu__container .content--account svg{
+  padding-right: 5px;
+}
+
+.MobalMenuOverlay {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .MobalMenu__container {
+    right: 0;
+    width: 20%;
+  }
+}

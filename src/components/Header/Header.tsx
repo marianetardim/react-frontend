@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import Minicart from "../Minicart/Minicart";
+import MobalMenu from "../Header/MobileMenu";
 import { IconMenuMobile, IconCorebiz, IconCart, IconUser , IconSearch, } from "../../assets/icons/headerIcons";
 import "./Header.css";
 
 const Header: React.FC = () => {
   const [get] = useCookies(["minicart"]);
   const [open, setOpen] = useState<boolean>(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   const product = get;
 
@@ -25,6 +27,7 @@ const Header: React.FC = () => {
             <a href="/"><IconUser />Minha Conta</a>
           </div>
           <div className="content--minicart" onClick={() => setOpen(!open)}>
+          <Minicart open={open} setOpen={setOpen} />
             <IconCart /> 
             {product?.minicart ? <span>{product?.minicart.length}</span> : null}
           </div>
@@ -33,7 +36,8 @@ const Header: React.FC = () => {
       </div>
       <div className="header__containerMobile">
         <div className="header__contentMobile">
-          <div className="contentMobile--menuIcon"><IconMenuMobile /></div>
+          <div className="contentMobile--menuIcon" onClick={() => setOpenMenu(!openMenu)}><IconMenuMobile /></div>
+          <MobalMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
           <div className="contentMobile--logo">
             <a href="/"><IconCorebiz /></a>
           </div>
