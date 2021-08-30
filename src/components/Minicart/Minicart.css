@@ -1,0 +1,57 @@
+.minicart__container {
+  background: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.minicart__closeButton{
+  cursor: pointer;
+}
+
+.minicart__titleContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 20px 0;
+  width: 100%;
+}
+
+.product__listContent img {
+  height: 122px;
+  margin: auto;
+  width: 132px;
+  display: flex;
+}
+
+.product__listContent span {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 14px;
+  width: 100%;
+}
+
+
+.minicartOverlay {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .minicart__container {
+    right: 0;
+    width: 20%;
+  }
+}

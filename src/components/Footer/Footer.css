@@ -1,0 +1,120 @@
+.footer__container {
+  background: #000;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  padding: 27px 16px;
+}
+
+.footer__address h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 4px solid #ffffff;
+  height: 4px;
+  width: 32px;
+}
+
+.footer__address h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0 0 17px;
+  position: relative;
+}
+
+.footer__address p {
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 13px;
+  margin: 3px;
+}
+
+.footer__address a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.footer__companys {
+  justify-content: center;
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__companys a {
+  text-decoration: none;
+  align-items: flex-start;
+  color: #fff;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", "sans-serif";
+  font-size: 10px;
+}
+
+
+.footer__contact {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.footer__contact a {
+  margin: 10px;
+  justify-content: center;
+  max-width: 198px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 38px;
+}
+
+.footer__contact a svg {
+  margin-right: 19px;
+}
+
+.footer__contact a:last-child svg {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer__address h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .footer__address h3::after {
+    width: 45px;
+  }
+
+  .footer__content {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1248px;
+  }
+
+  .footer__contact{
+    padding-top: 0px;
+  }
+}
