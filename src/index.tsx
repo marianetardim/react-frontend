@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import Page from "./PageCorebiz";
 import reportWebVitals from "./reportWebVitals";
 import { CookiesProvider } from "react-cookie";
